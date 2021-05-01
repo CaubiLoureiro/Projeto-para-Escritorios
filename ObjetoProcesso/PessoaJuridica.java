@@ -1,7 +1,6 @@
 package ObjetoProcesso;
 
 public class PessoaJuridica extends Processo{
-
     private String cnpj;
 
     public PessoaJuridica(String reu, String autor, String numeroProcesso, String advogadoAutor, String advogadoReu, String cnpj){
@@ -12,9 +11,4 @@ public class PessoaJuridica extends Processo{
     public String getCnpj() {
         return cnpj;
     }
-
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
-    }
-
 }

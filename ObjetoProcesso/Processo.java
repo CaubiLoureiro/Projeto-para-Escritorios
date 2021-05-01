@@ -1,13 +1,13 @@
 package ObjetoProcesso;
 
-public class Processo {
+public abstract class Processo {
     private String reu;
     private String autor;
     private String numeroProcesso;
     private String advogadoAutor;
     private String advogadoReu;
     private int faseProcesso;
-    private boolean atulizou;
+    private boolean atualizou;
 
     public Processo(String reu, String autor, String numeroProcesso, String advogadoAutor, String advogadoReu){
         this.reu = reu;
@@ -66,11 +66,11 @@ public class Processo {
         this.faseProcesso = faseProcesso;
     }
 
-    public boolean getAtulizou() {
-        return atulizou;
+    public boolean getAtualizou() {
+        return atualizou;
     }
 
-    public void setAtulizou(boolean atulizou) {
-        this.atulizou = atulizou;
+    public void setAtulizou(boolean atualizou) {
+        this.atualizou = atualizou;
     }
 }
