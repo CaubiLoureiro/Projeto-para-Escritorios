@@ -1,12 +1,13 @@
 package ObjetoProcesso;
 
-public class Processo {
+import java.io.Serializable;
+
+public abstract class Processo implements Serializable{
     private String reu;
     private String autor;
     private String numeroProcesso;
     private String advogadoAutor;
     private String advogadoReu;
-
 
     public Processo(String reu, String autor, String numeroProcesso, String advogadoAutor, String advogadoReu){
         this.reu = reu;
@@ -56,5 +57,4 @@ public class Processo {
     public void setAdvogadoReu(String advogadoReu) {
         this.advogadoReu = advogadoReu;
     }
-
 }
