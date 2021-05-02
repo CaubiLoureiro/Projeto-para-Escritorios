@@ -13,17 +13,19 @@ import ObjetoProcesso.*;
  */
 public class Main {
     public static void main(String[] Args){
-        Arquivos.inicializaTamanho("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt");
+        Arquivos.inicializaControle();
+        PessoaFisica inicial = new PessoaFisica("","","","","","");
+        Arquivos.InicializaArquivo(inicial, Arquivos.tamanhoArquivo());
+        
         PessoaFisica processo = new PessoaFisica("Alfredo", "Pedro", "12333-3212-2332-322", "Gabriel","Jorge", "12312312332");
         PessoaJuridica processo1 = new PessoaJuridica("Marcos", "CocaCola", "12342-242424-2333-3", "Hugo","João", "11209832098");
-//        Arquivos.ArmazenaProcesso("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt", processo);
-        Arquivos.AdicionaProcesso("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt", processo);
-        Arquivos.AdicionaProcesso("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt", processo1);;
-//       
-        Arquivos.imprimeArquivoDeProcessos("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt");
-        Arquivos.buscaProcessoCpf("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt", "12312312332");
-        Arquivos.buscaProcessoCnpj("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/tamanho.txt", "12312312332");
-//        Arquivos.buscaProcessoNumero("C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Projeto/src/main/java/Processos/entrada.dat", "0");
+        Arquivos.AdicionaProcesso(processo, Arquivos.tamanhoArquivo());
+        Arquivos.AdicionaProcesso(processo1, Arquivos.tamanhoArquivo());
+        
+        Arquivos.imprimeArquivoDeProcessos(Arquivos.tamanhoArquivo());
+        Arquivos.buscaProcessoCpf("12312312332", Arquivos.tamanhoArquivo());
+        Arquivos.buscaProcessoCnpj("11209832098",Arquivos.tamanhoArquivo());
+        Arquivos.buscaProcessoNumero("12342-242424-2333-3", Arquivos.tamanhoArquivo());
 
     }
 }
