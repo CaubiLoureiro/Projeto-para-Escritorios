@@ -1,7 +1,7 @@
 <h1> Projeto Final para Aula de Programação Orientada a Objetos. </h1>
 
 <p>Tema: Sistema de Gerenciamentos de Processos Jurídicos <br>
-Nome dos Integrantes: Pedro Cassa Dias, Julio Vasconcellos Araujo Dias Gonçalves e Caubi de Souza Loureiro Rosa
+Nome dos Integrantes: Pedro Cassa Dias - Responsável pelo acesso aos arquivos. <br> Julio Vasconcellos Araujo Dias Gonçalves - Responsável pela interface em JavaSwing. <br> Caubi de Souza Loureiro Rosa - Responsável pelo chat e pelo acesso ao processo na web.
 </p>
 
 <p>Parte 1: Adição e busca de processos.<br>
