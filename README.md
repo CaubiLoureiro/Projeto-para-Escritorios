@@ -1,9 +1,12 @@
-<h1> Projeto final para Aula de Programação Orientada a Objetos. </h1>
+<h1> Projeto Final para Aula de Programação Orientada a Objetos. </h1>
 
-Tema: Sistema de Gerenciamentos de Processos Jurídicos
+<p>Tema: Sistema de Gerenciamentos de Processos Jurídicos <br>
+Nome dos Integrantes: Pedro Cassa Dias, Julio Vasconcellos Araujo Dias Gonçalves e Caubi de Souza Loureiro Rosa
+</p>
 
-Parte 1: Adição e busca de processos. <br>
-Parte 2: Chat entre cliente e advogado. <br>
+<p>Parte 1: Adição e busca de processos.<br>
+Parte 2: Chat entre cliente e advogado.
+</p>
 
 <h2>Como Executar a Parte 1 do Projeto:</h2>
   <ol>
