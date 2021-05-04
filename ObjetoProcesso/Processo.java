@@ -6,7 +6,7 @@ public abstract class Processo implements Serializable{
     // Essa classe é abstract pq ela foi pensada para que nenhum objeto seja criado a partir dela, apenas das filhas
     /**
      *
-     * @author caubi
+     * @author caubi, pedro
      */
     private String reu;
     private String autor;
